@@ -1,6 +1,6 @@
 #include "fileio.h"
 
-int read_file_bytes (char* filename, int bytes, char* buffer)
+int read_file_bytes (char *filename, int bytes, char *buffer)
 /*
  * Reads byte data from a file
  * Inputs:
@@ -14,7 +14,7 @@ int read_file_bytes (char* filename, int bytes, char* buffer)
 	return read(file, buffer, bytes);
 }
 
-int read_file_lines (char* filename, char buffer[MAXLINES][MAXBYTES + 1])
+int read_file_lines (char *filename, char buffer[MAXLINES][MAXBYTES + 1])
 /*
  * Reads lines from a file
  * Inputs:
@@ -24,8 +24,8 @@ int read_file_lines (char* filename, char buffer[MAXLINES][MAXBYTES + 1])
  */
 {
 	int j = 0;
-	FILE* file = fopen(filename, "r");
-	char* file_line = fgets(buffer[0], MAXBYTES, file);
+	FILE *file = fopen(filename, "r");
+	char *file_line = fgets(buffer[0], MAXBYTES, file);
 
 	if (file_line == NULL){
         return j;

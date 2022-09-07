@@ -4,7 +4,7 @@
  * a number of bytes instead with the read_file_bytes function in fileio.c
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 /*
  * Reads a number of lines from a file up to MAXLINES and MAXBYTES per line
  * Inputs:

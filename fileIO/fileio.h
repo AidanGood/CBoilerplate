@@ -10,8 +10,8 @@
 #define MAXBYTES 1024
 #define MAXLINES 50
 
-int read_file_bytes (char* filename, int bytes, char* buffer);
+int read_file_bytes (char *filename, int bytes, char *buffer);
 
-int read_file_lines (char* filename, char buffer[MAXLINES][MAXBYTES + 1]);
+int read_file_lines (char *filename, char buffer[MAXLINES][MAXBYTES + 1]);
 
 #endif
